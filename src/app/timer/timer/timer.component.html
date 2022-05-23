@@ -1,0 +1,6 @@
+<div class="w-50 border border-white bg-dark text-white text-center">
+  <h2>{{ time.mins }} : {{ time.segs }} : {{ time.ctm }}</h2>
+  <button class="btn btn-success mx-1" (click)="initTimer()">{{ (start)?"Pause":"Start" }}</button>
+  <button class="btn btn-danger mx-1" (click)="resetTimer()">Reset</button>
+  <button class="btn btn-primary mx-1" (click)="stopTimer()">Stop</button>
+</div>

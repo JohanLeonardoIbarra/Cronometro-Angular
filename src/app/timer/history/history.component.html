@@ -1,0 +1,11 @@
+<table class="">
+  <tr>
+    <th>
+      <button class="btn btn-danger"(click)="resetHistory()">Limpiar Historial</button>
+    </th>
+  </tr>
+  <tr class="w-100 d-flex flex-wrap justify-content-center" *ngFor="let time of history">
+    <td class="block">Tiempo: {{ time.mins }}:{{ time.segs }}:{{ time.ctm }}</td>
+  </tr>
+</table>
+
